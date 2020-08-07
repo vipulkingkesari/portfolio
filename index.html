@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vipul Kesari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <!-- HOSTED -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='shortcut icon' href='logo.jpeg' type='image/x-icon' >
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+
+</head>
+<body>
+<div class="overflow-wrap">
+
+<!-- HOME -->
+  <div class="modal-wrap flex">
+    <div class="mask"></div>
+    <div class="modal" id="modal">
+      <div class="carousel-wrap">
+        <div class="window">
+          <div id="carousel">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          </div>
+          <i class="mdi mdi-chevron-left" id="prev"></i>
+          <i class="mdi mdi-chevron-right" id="next"></i>
+        </div>
+
+      </div>
+      <div class="info-box">
+        <div class="title"></div>
+        <div class="tag"></div>
+        <div class="detail"></div>
+        <a href="#" target="_blank"><div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div></a>
+      </div>
+      <i class="close mdi mdi-close"></i>
+    </div>
+  </div>
+
+  <section id="home" class="flex height-fix">
+    <div id="pt" class="canvas"></div>
+    <div class="flex">
+
+      <!-- <div class="text">
+        Hello, I'm <span class="highlight">Shivank Maheshwari</span>.
+        <br>
+        I'm a full-stack web developer.
+      </div> -->
+      <div class="text">
+        <div class="container py-5">
+          <div class="output" id="output">
+            <h3 class="cursor"></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="button page-link" dest="about">See More<i class="mdi mdi-arrow-right"></i></div>
+
+      <nav class="flex">
+        <div class="link-wrap">
+          <div class="active page-link" dest="home">home</div>
+          <div class="page-link" dest="about">about</div>
+          <div class="page-link" dest="portfolio">Experience</div>
+          <div class="page-link" dest="blog">Achievements</div>
+          <div class="page-link" dest="contact">contact</div>
+
+        </div>
+        <i class="mdi mdi-menu"></i>
+      </nav>
+    </div>
+
+  </section>
+
+<!-- ABOUT -->
+  <section id="about">
+    <div class="container flex">
+
+      <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+    <!--  <div class="flex row label-wrap">
+        <div class="flex row-gt-sm">
+        <div class="flex bullet-wrap ">
+          <div class="hex-wrap waypoint" data-animation="flip-in-x">
+            <div class="hexagon">
+              <i class="mdi mdi-speedometer"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in">
+            <div class="label bold">Fast</div>
+            <div>Fast load times and lag free interaction, my highest priority.</div>
+          </div>
+        </div>
+
+        <div class="flex bullet-wrap " >
+          <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+            <div class="hexagon">
+              <i class="mdi mdi-cellphone-link"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+            <div class="label bold">Responsive</div>
+            <div>My layouts will work on any device, big or small.</div>
+          </div>
+        </div>
+        </div>
+        <div class="flex row-gt-sm">
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+              <div class="hexagon">
+                <i class="mdi mdi-lightbulb-outline"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+              <div class="label bold">Intuitive</div>
+              <div>Strong preference for easy to use, intuitive UX/UI.</div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+              <div class="hexagon">
+                <i class="mdi mdi-rocket"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+              <div class="label bold">Dynamic</div>
+              <div>Websites don't have to be static, I love making pages come to life.</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="skills-wrapper flex row-gt-sm">
+        <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+          <img src="img/king.jpeg" class="me" style="height:300px; width:300px; border-radius=50%;">
+          <div class="label bold">Who's this guy?</div>
+            A computer enthusiast of <a class="highlight" href="https://www.iiitd.ac.in/" target="_blank">IIITD</a> pursuing Bachelor of Technology in CSE domain. Also CTO and Co-Founder at <a class="highlight" href="https://www.chimodoshi.in/" target="_blank">Chimodoshi.</a> Interested in Web developement
+            ,App developement,Machine Learning, AI and Cyber Security. Always try to enhance his capabilities by learning new things and exploring new techonology and tools.
+
+            <br>
+            Besides the all description i am book lover having great interest in history and i love travel whenever i get time....
+            <br>
+            <span class="page-link highlight" dest="contact">Let's be Friends.</span>
+        </div>
+
+        <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
+          <div class="bar flex">
+            <div class="bar fill" style="width:60%">
+              <div class="tag bold flex">C++</div>
+            </div>
+            <span>60%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:50%">
+              <div class="tag bold flex">C</div>
+            </div>
+            <span>50%</span>
+          </div>
+
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">Html/CSS</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:60%">
+              <div class="tag bold flex">JavaScript</div>
+            </div>
+            <span>60%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:70%">
+              <div class="tag bold flex">Cyber Security</div>
+            </div>
+            <span>70%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">BootStrap</div>
+            </div>
+            <span>90%</span>
+          </div>
+           <div class="bar flex">
+            <div class="bar fill" style="width:70%">
+              <div class="tag bold flex">Android</div>
+            </div>
+            <span>70%</span>
+          </div>
+           <div class="bar flex">
+            <div class="bar fill" style="width:80%">
+              <div class="tag bold flex">Java</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:80%">
+              <div class="tag bold flex">Python</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:50%">
+              <div class="tag bold flex">UI Design</div>
+            </div>
+            <span>50%</span>
+          </div>
+          <div class="bar flex">
+            <div class="bar fill" style="width:70%">
+              <div class="tag bold flex">MySQL</div>
+            </div>
+            <span>70%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:90%">
+              <div class="tag bold flex">Machine Learning</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:80%">
+              <div class="tag bold flex">Linux</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:50%">
+              <div class="tag bold flex">Bash Scripting</div>
+            </div>
+            <span>50%</span>
+          </div>
+
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:60%">
+              <div class="tag bold flex">Digital Marketing</div>
+            </div>
+            <span>60%</span>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- PORTFOLIO -->
+  <section class="flex" id="portfolio">
+
+    <div class="header waypoint" data-animation="slide-in-right">Experience</div>
+    <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+    <div class="filter-wrap waypoint" data-animation="fade-in">
+      <div class="flex row">
+        <div class="filter" data-filter="all">ALL</div>
+        <div class="filter" data-filter=".node">Android</div>
+        <div class="filter" data-filter=".rails">Web</div>
+        <div class="filter" data-filter=".js">Miscellaneous</div>
+      </div>
+      <div class="float-bar">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".node">Android</div>
+          <div class="filter" data-filter=".rails">Web</div>
+          <div class="filter" data-filter=".js">Miscellaneous</div>
+        </div>
+      </div>
+    </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">plants vs zombies</div>
+            <br>
+            <span class="highlight">Have to write codes in java and javafx</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mix rails" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Web Developer</div>
+            <br>
+            <span class="highlight">Developed Website for college project  using HTML5, CSS3 & JS.</span>
+          </div>
+          <a href="https://vipulkingkesari.github.io/DBMS/"><div class="button">Visit Site</div></a>
+        </div>
+      </div>
+
+      <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">EngSuno</div>
+            <br>
+            <span class="highlight">Android App (under developement) for improving english speaking among people</span>
+          </div>
+         <a href="https://github.com/vipulkingkesari/EngSuno"><div class="button">Project Link</div></a>
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Cyber Security Intern</div>
+            <br>
+            <span class="highlight">Have to gather the information about the intended sources using the tools of Kali Linux. Also learnt the network penetration there.</span>
+          </div>
+          <!-- <div class="button" id="never">LEARN MORE</div> -->
+        </div>
+       </div>
+
+      <div class="mix rails" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Web Developer</div>
+            <br>
+            <span class="highlight">Developed Website for the Tuition named Simplifier the science academy.</span>
+          </div>
+        <a href="https://vipulkingkesari.github.io/simplifier/"><div class="button">Visit Site</div></a>
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">smart vehichle</div>
+            <br>
+            <span class="highlight">Developed IOT project using arduino.</span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Smart Table</div>
+            <br>
+            <span class="highlight">Developed an IOT project using arduino.</span>
+          </div>
+         <a href="https://vipulkesari13.wixsite.com/simplifier"><div class="button">See Work Samples</div></a>
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Smart Shoe</div>
+            <br>
+            <span class="highlight">Developed an IOT project using arduino.</span>
+          </div>
+          <a href="https://vipul18118.wixsite.com/rrvv"><div class="button">See Work Samples</div></a>
+
+        </div>
+      </div>
+
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">PackMan Game</div>
+            <br>
+            <span class="highlight">Developed an gaming app using MIT APP INVENTOR.</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">KILL</div>
+            <br>
+            <span class="highlight">Developed a 2D game using Unity.</span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">CyberJagrithi</div>
+            <br>
+            <span class="highlight">Done Cyber Security analyst intern at CyberJagrithi.</span>
+          </div>
+         <a href="https://cjp.mittaltech.org/#programs"><div class="button">See Website</div></a>
+        </div>
+      </div>
+
+
+
+
+
+      <!--for future pupose android-->
+      <!-- <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">The Mall</div>
+            <span class="highlight">Node + React.js</span>
+          </div>
+          <div class="button" id="themall">LEARN MORE</div>
+        </div>
+      </div> -->
+    </div>
+
+
+  </section>
+
+<!-- BLOG -->
+  <section id="blog">
+    <div class="container flex">
+
+      <div class="header waypoint" data-animation="slide-in-left">Achievements</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+      <div class="flex row wrap">
+        <div class="flex row-gt-sm">
+         <!-- <a href="http://blog.eyecuelab.com/2016/04/29/breaking-your-coders-block/" target="_blank">-->
+            <div class="blog-wrap waypoint" data-animation="fade-in">
+              <div class="fade-wrap">
+                <div class="thumb" id="thumb-1"></div>
+                <div class="label bold">Excellence In<br>Education Award -2018</div>
+                <div class="bar"></div>
+                <div class="text">
+                  I got Excellence In Education Award from Delhi Government in 2018 for performing good in 12th Class.
+                </div>
+              </div>
+            </div>
+          <!--</a>-
+          <!--<a href="http://blog.eyecuelab.com/2015/03/19/this-is-your-brain-on-caffeine/" target="_blank">--
+            <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".2s">
+              <div class="fade-wrap">
+                <div class="thumb" id="thumb-2"></div>
+                <div class="label bold">Rank 2</div>
+                <div class="bar"></div>
+                <div class="text">
+                  Stood second in <b>codecoaster- a competetive programming competition</b> organized by IP College, Delhi University in their annual tech fests.
+                </div>
+              </div>
+            </div>
+          <!--</a>--
+
+
+         <!-- <a href="http://blog.eyecuelab.com/2015/03/04/getting-a-handle-on-handlebars/" target="_blank">----
+            <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".4s">
+              <div class="fade-wrap">
+                <div class="thumb" id="thumb-3"></div>
+                <div class="label bold">Action on Google Assistant</div>
+                <div class="bar"></div>
+                <div class="text">
+                  Action published on google assistant. Try <b>"talk to Hansraj College Chatbot"</b> to your google assistant.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--</a>-->
+        <!--  <a href="http://blog.eyecuelab.com/2015/02/23/essential_extensions/" target="_blank">
+            <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".6s">
+              <div class="fade-wrap">
+                <div class="thumb" id="thumb-4"></div>
+                <div class="label bold">5 Extensions for Your Chrome Toolbelt</div>
+                <div class="date">FEBRUARY 23, 2015</div>
+                <div class="bar"></div>
+                <div class="text">
+                  If you're not using Google Chrome as a front-end web developer, you're missing out. Not only is Chrome the...
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+    <div class="container flex">
+      <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+      <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Have a question or want to work together?</div>
+      <form action="https://formspree.io/mknqydbr" method="POST">
+      <input placeholder="Prince Kumar" type="text" name="name" required>
+        <input placeholder="Your@gmail.com" type="email" name="email" required>
+        <textarea placeholder="you have my attention. Be descriptive!" type="text" name="message"></textarea>
+        <div id="success">
+          <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
+        </div>
+        <input class="button" type="submit" id="submit" value=SUBMIT>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <i class="mdi mdi-chevron-double-up page-link" dest="home" style="border-radius:30%"></i>
+
+    <div class="icon-wrap flex row">
+        <a href="https://github.com/vipulkingkesari">
+          <div class="flex icon" id="icon-5" style="border-radius:30%">
+            <i class="mdi mdi-github-circle"></i>
+          </div>
+        </a>
+      <a href="https://www.linkedin.com/in/vipul-kesari-9b6632191/">
+        <div class="flex icon" id="icon-2" style="border-radius:30%">
+          <i class="mdi mdi-linkedin"></i>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100011042414170">
+        <div class="flex icon" id="icon-3" style="border-radius:30%">
+          <i class="mdi mdi-facebook"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/k.keshri_vipul/">
+        <div class="flex icon" id="icon-4" style="border-radius:30%">
+          <i class="mdi mdi-instagram"></i>
+        </div>
+      </a>
+
+    </div>
+    <div class="info-box">
+      <div class="footnote"> Vipul Kesari <span class="highlight">@ 2020</span></div>
+    </div>
+  </footer>
+
+</div>
+
+<div id="preload">
+   <img src="img/me.png"/>
+   <img src="img/filler.jpg"/>
+   <img src="img/plantsvszombies.jpg"/>
+   <img src="img/thumb-2.jpg"/>
+   <img src="img/thumb-3.jpg"/>
+   <img src="img/thumb-4.jpg"/>
+   <img src="img/thumb-5.jpg"/>
+   <img src="img/thumb-6.jpg"/>
+   <img src="img/blog-1.jpg"/>
+   <img src="img/blog-2.jpg"/>
+   <img src="img/blog-3.jpg"/>
+</div>
+
+</body>
+</html>
+
+<script src="scripts/canvas.js"></script>
